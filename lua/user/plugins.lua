@@ -77,6 +77,7 @@ return packer.startup(function(use)
   use "Shatur/neovim-session-manager"
   use "rcarriga/nvim-notify"
   use "tversteeg/registers.nvim"
+  use "rcarriga/nvim-notify"
   -- use "metakirby5/codi.vim"
   use "nyngwang/NeoZoom.lua"
   use "SmiteshP/nvim-gps"
@@ -94,6 +95,7 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use "rose-pine/neovim"
   use "rebelot/kanagawa.nvim"
+  use "rose-pine/neovim"
 
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "d93104244c3834fbd8f3dd01da9729920e0b5fe7" } -- The completion plugin

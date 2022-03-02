@@ -269,6 +269,13 @@ local mappings = {
     h = { "<cmd>TSHighlightCapturesUnderCursor<cr>", "Highlight" },
     p = { "<cmd>TSPlaygroundToggle<cr>", "Playground" },
   },
+  q = {
+    name = "Quit",
+    q = { "<cmd>quit<cr>", "Quit" },
+    Q = { ":wq<cr>", "Save and Quit" },
+    x = { ":q!<cr>", "Quit Without Save"},
+  },
+  w = { ":w<cr>", "Save" },
 }
 
 local vopts = {

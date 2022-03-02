@@ -1,3 +1,4 @@
+vim.cmd('filetype plugin indent on')
 local options = {
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
@@ -27,14 +28,35 @@ local options = {
   shiftwidth = 2,                          -- the number of spaces inserted for each indentation
   tabstop = 2,                             -- insert 2 spaces for a tab
   cursorline = true,                       -- highlight the current line
+  cursorcolumn = true,                     --highlight the current column
   number = true,                           -- set numbered lines
   relativenumber = false,                  -- set relative numbered lines
   numberwidth = 4,                         -- set number column width to 2 {default 4}
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
   wrap = false,                            -- display lines as one long line
-  scrolloff = 8,                           -- is one of my fav
-  sidescrolloff = 8,
+  scrolloff = 3,                           -- is one of my fav
+  sidescrolloff = 5,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
+  hidden = true,
+  whichwrap = 'b,s,<,>,[,],h,l',
+  spelllang = "en_us",
+  spell = true,
+  lazyredraw = true,
+  ttyfast = true,
+  history = 999,
+  undolevels = 999,
+  autoread = true,
+  incsearch = true,
+  startofline = false,
+  laststatus = 2,
+  showcmd = true,
+  showmatch = true,
+  title = true,
+  softtabstop = 2,
+  smarttab = true,
+  formatoptions = "qrn1",
+  complete = '.,b,u,U,t,i,d',
+  autoindent = true,
 }
 
 vim.opt.shortmess:append "c"
