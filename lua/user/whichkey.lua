@@ -276,6 +276,12 @@ local mappings = {
     x = { ":q!<cr>", "Quit Without Save"},
   },
   w = { ":w<cr>", "Save" },
+
+  z = {
+    name = "Focus Mode",
+    z = {":ZenMode<cr>", "Zen Mode"},
+    t = {":Twilight<cr>", "Twilight"}
+  }, 
 }
 
 local vopts = {

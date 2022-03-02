@@ -66,6 +66,7 @@ return packer.startup(function(use)
   use "norcalli/nvim-colorizer.lua"
   use "windwp/nvim-spectre"
   use "folke/zen-mode.nvim"
+  use "folke/twilight.nvim"
   use "karb94/neoscroll.nvim"
   use "folke/todo-comments.nvim"
   use "kevinhwang91/nvim-bqf"
@@ -95,7 +96,6 @@ return packer.startup(function(use)
   use "lunarvim/darkplus.nvim"
   use "rose-pine/neovim"
   use "rebelot/kanagawa.nvim"
-  use "rose-pine/neovim"
 
   -- cmp plugins
   use { "hrsh7th/nvim-cmp", commit = "d93104244c3834fbd8f3dd01da9729920e0b5fe7" } -- The completion plugin
