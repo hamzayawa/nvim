@@ -57,6 +57,9 @@ local options = {
   formatoptions = "qrn1",
   complete = '.,b,u,U,t,i,d',
   autoindent = true,
+
+
+
 }
 
 vim.opt.shortmess:append "c"
@@ -68,3 +71,16 @@ end
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
+
+vim.cmd [[
+  autocmd BufNewFile,BufRead *.vpm call SetVimPresentationMode()
+  function SetVimPresentationMode()
+    nnoremap <buffer> <Right> :n<CR>
+    nnoremap <buffer> <Left> :N<CR>
+
+    if !exists('#ZenMode')
+      ZenMode
+    endif
+  endfunction
+
+]]

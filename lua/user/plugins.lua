@@ -62,8 +62,9 @@ return packer.startup(function(use)
   use "phaazon/hop.nvim"
   use "andymass/vim-matchup"
   use "nacro90/numb.nvim"
-  use "monaqa/dial.nvim"
-  use "norcalli/nvim-colorizer.lua"
+  -- use "monaqa/dial.nvim"
+  -- use "norcalli/nvim-colorizer.lua"
+  use "br1anchen/nvim-colorizer.lua"
   use "windwp/nvim-spectre"
   use "folke/zen-mode.nvim"
   use "folke/twilight.nvim"
@@ -78,10 +79,12 @@ return packer.startup(function(use)
   use "Shatur/neovim-session-manager"
   use "rcarriga/nvim-notify"
   use "tversteeg/registers.nvim"
-  use "rcarriga/nvim-notify"
+  use "jupyter-vim/jupyter-vim"
+  use "lervag/vimtex"
   -- use "metakirby5/codi.vim"
   use "nyngwang/NeoZoom.lua"
   use "SmiteshP/nvim-gps"
+  use "fadein/vim-FIGlet"
   use { "michaelb/sniprun", run = "bash ./install.sh" }
   use {
 
@@ -164,7 +167,8 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
-  use "p00f/nvim-ts-rainbow"
+  -- use "p00f/nvim-ts-rainbow"
+  use {'p00f/nvim-ts-rainbow', commit = 'c6c26c4def0e9cd82f371ba677d6fc9baa0038af'}
   use "nvim-treesitter/playground"
   use "windwp/nvim-ts-autotag"
   use "romgrk/nvim-treesitter-context"

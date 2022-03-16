@@ -18,6 +18,13 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
+--Using the hjkl keys for moving left, right, up and down
+
+keymap("n", "<up>", "<nop>", opts)
+keymap("n", "<down>", "<nop>", opts)
+keymap("n", "<left>", "<nop>", opts)
+keymap("n", "<right>", "<nop>", opts)
+
 -- Normal --
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
