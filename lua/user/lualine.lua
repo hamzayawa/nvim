@@ -78,13 +78,17 @@ local nvim_gps = function()
   end
 end
 
+-- TODO: find out what is overriding this
+vim.opt.laststatus = 3
+
 lualine.setup {
   options = {
     icons_enabled = true,
     theme = "auto",
-    component_separators = { left = "", right = "" },
-    section_separators = { left = "", right = "" },
-    disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline", "toggleterm" },
+    component_separators = { left = "", right = "" },
+    section_separators = { left = "", right = "" },
+    -- disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline", "toggleterm" },
+    disabled_filetypes = { "alpha", "dashboard", "toggleterm" },
     always_divide_middle = true,
   },
   sections = {
@@ -112,11 +116,4 @@ lualine.setup {
   extensions = {},
 }
 
--- require('lualine').setup({
---   options = {
---     theme = 'rose-pine', 
---     section_separators = {left = '', right = ''},
---     component_separators = {left = '', right = ''}
---   },
---   extensions = {'nvim-tree'}
--- })
+
