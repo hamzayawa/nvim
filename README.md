@@ -1,5 +1,5 @@
 # My Neovim Config
-Forked from  [ChristianChiarulli](git@github.com:ChristianChiarulli/Neovim-from-scratch.git) and edited it to my test!
+Forked from  [ChristianChiarulli](https://github.com/ChristianChiarulli/nvim.git) and edited it to my test!
 
 ## Try out this config
 
