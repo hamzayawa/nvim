@@ -94,6 +94,7 @@ keymap("n", "<F8>", "<cmd>TSPlaygroundToggle<cr>", opts)
 keymap("n", "<F11>", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
 keymap("n", "<F12>", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
 keymap("v", "//", [[y/\V<C-R>=escape(@",'/\')<CR><CR>]], opts)
+keymap("n", "<A-s>", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], opts)
 keymap(
   "n",
   "<C-p>",

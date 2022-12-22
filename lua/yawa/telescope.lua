@@ -5,7 +5,7 @@ end
 
 local actions = require "telescope.actions"
 telescope.load_extension "media_files"
-local icons = require("user.icons")
+local icons = require("yawa.icons")
 
 telescope.setup {
   defaults = {
