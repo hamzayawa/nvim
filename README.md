@@ -3,6 +3,8 @@ Forked from  [ChristianChiarulli](https://github.com/ChristianChiarulli/nvim.git
 
 ## Try out this config
 ![Image-1](img/img1.png)
+![Image-2](img/img1.p2g)
+![Image-3](img/im31.png)
 
 Make sure to remove or move your current `nvim` directory
 
