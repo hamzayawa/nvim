@@ -2,7 +2,12 @@
 Forked from  [ChristianChiarulli](https://github.com/ChristianChiarulli/nvim.git) and edited it to my test!
 
 ## Try out this config
-![Image-1](/nvim/img/img1.jpg "Optional title")
+
+<img
+  src="https://github.com/hamzayawa/nvim/tree/master/img/img1.png"
+  alt="Image-1"
+  title="Neovim"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 Make sure to remove or move your current `nvim` directory
 
