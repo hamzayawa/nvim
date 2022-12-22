@@ -2,6 +2,7 @@
 Forked from  [ChristianChiarulli](https://github.com/ChristianChiarulli/nvim.git) and edited it to my test!
 
 ## Try out this config
+![Image-1](/.config/nvim/img/img.jpg "Optional title")
 
 Make sure to remove or move your current `nvim` directory
 
