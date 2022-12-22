@@ -2,7 +2,7 @@
 Forked from  [ChristianChiarulli](https://github.com/ChristianChiarulli/nvim.git) and edited it to my test!
 
 ## Try out this config
-![Image-1](/posts/https://github.com/hamzayawa/nvim/tree/master/img/img1.png "Optional title")
+![Image-1](img/img1.png)
 
 Make sure to remove or move your current `nvim` directory
 
