@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local icons = require "yawa.icons"
+local icons = require "user.icons"
 
 local error_red = "#F44747"
 local warning_orange = "#ff8800"

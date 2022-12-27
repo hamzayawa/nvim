@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local icons = require "yawa.icons"
+local icons = require "user.icons"
 
 notify.setup {
   -- Animation style (see below for details)

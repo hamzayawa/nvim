@@ -40,6 +40,6 @@ zen_mode.setup {
     require("lsp-inlayhints").toggle()
     vim.g.cmp_active = true
     vim.cmd [[LspStart]]
-    require("yawa.winbar").create_winbar()
+    require("user.winbar").create_winbar()
   end,
 }

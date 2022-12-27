@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-local icons = require "yawa.icons"
+local icons = require "user.icons"
 
 -- vim.api.nvim_set_hl(0, "WinBarSeparator", { fg = "#111fff" })
 -- local fg = vim.api.nvim_get_hl_by_name('DiffAdd', 0).background
