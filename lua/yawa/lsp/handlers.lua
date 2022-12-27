@@ -46,7 +46,7 @@ M.setup = function()
 end
 
 local function lsp_highlight_document(client)
-  if client.server_capabilities.document_highlight then
+  if client.resolved_capabilities.document_highlight then
     local status_ok, illuminate = pcall(require, "illuminate")
     if not status_ok then
       return
@@ -81,7 +81,7 @@ end
 M.on_attach = function(client, bufnr)
   -- notify(client.name)
   if client.name == "tsserver" or client.name == "html" then
-    client.server_capabilities.document_formatting = false
+    client.resolved_capabilities.document_formatting = false
   end
   lsp_keymaps(bufnr)
   lsp_highlight_document(client)
@@ -128,15 +128,4 @@ end
 
 vim.cmd [[ command! LspToggleAutoFormat execute 'lua require("yawa.lsp.handlers").toggle_format_on_save()' ]]
 
--- suppress error messages from lang servers
-vim.notify = function(msg, log_level, _opts)
-    if msg:match("exit code") then
-        return
-    end
-    if log_level == vim.log.levels.ERROR then
-        vim.api.nvim_err_writeln(msg)
-    else
-        vim.api.nvim_echo({{msg}}, true, {})
-    end
-end
 return M
