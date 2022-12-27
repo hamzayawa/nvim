@@ -1,4 +1,4 @@
-local status_ok, lsp = pcall(require, "lsp-zero")
+local status_ok, mason = pcall(require, "mason")
 if not status_ok then
   return
 end
@@ -16,7 +16,7 @@ local servers = {
   "jdtls",
   "jsonls",
   "solc",
-  -- "solidity_ls",
+  "solidity_ls",
   "sumneko_lua",
   "tflint",
   "terraformls",
@@ -31,7 +31,6 @@ local servers = {
   "lemminx"
 }
 
-
 local settings = {
   ui = {
     border = "rounded",
@@ -45,7 +44,7 @@ local settings = {
   max_concurrent_installers = 4,
 }
 
-lsp.setup(settings)
+mason.setup(settings)
 mason_lspconfig.setup {
   ensure_installed = servers,
   automatic_installation = true,
@@ -81,7 +80,7 @@ for _, server in pairs(servers) do
     if not l_status_ok then
       return
     end
-    -- local sumneko_opts = require "yawa.lsp.settings.sumneko_lua"
+    -- local sumneko_opts = require "user.lsp.settings.sumneko_lua"
     -- opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
     -- opts = vim.tbl_deep_extend("force", require("lua-dev").setup(), opts)
     local luadev = lua_dev.setup {

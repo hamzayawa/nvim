@@ -45,7 +45,13 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
-  use "numToStr/Comment.nvim"
+  --use "numToStr/Comment.nvim"
+	use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
   --use "kyazdani42/nvim-web-devicons"
   --use { "kyazdani42/nvim-tree.lua", commit = "f183c7f31197ae499c3420341fb8b275636a49b8" }
 	use {
@@ -118,6 +124,7 @@ use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-dev
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "ray-x/lsp_signature.nvim"
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+	use('MunifTanjim/prettier.nvim')
   use {
   'VonHeikemen/lsp-zero.nvim',
   requires = {
